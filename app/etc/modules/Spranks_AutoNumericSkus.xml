@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Spranks_AutoNumericSkus>
+            <codePool>community</codePool>
+            <active>true</active>
+            <depends>
+                <Mage_Adminhtml/>
+                <Mage_Catalog/>
+                <Mage_Core/>
+            </depends>
+        </Spranks_AutoNumericSkus>
+    </modules>
+</config>

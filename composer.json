@@ -1,0 +1,16 @@
+{
+    "name":"spranks/auto-numeric-skus",
+    "type":"magento-module",
+    "license":"OSL-3.0",
+    "homepage":"https://github.com/sprankhub/Spranks_AutoNumericSkus",
+    "description":"This extension automatically generates numeric SKUs, such as the new SKU is the highest currently existing SKU + 1.",
+    "authors":[
+        {
+            "name":"Simon Sprankel",
+            "email":"mail@simonsprankel.de"
+        }
+    ],
+    "require":{
+        "magento-hackathon/magento-composer-installer":"*"
+    }
+}

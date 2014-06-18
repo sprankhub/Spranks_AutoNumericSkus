@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Spranks_AutoNumericSkus>
+            <version>0.1.0</version>
+        </Spranks_AutoNumericSkus>
+    </modules>
+    <global>
+        <models>
+            <spranks_autonumericskus>
+                <class>Spranks_AutoNumericSkus_Model</class>
+            </spranks_autonumericskus>
+        </models>
+    </global>
+    <adminhtml>
+        <events>
+            <core_block_abstract_to_html_after>
+                <observers>
+                    <spranks_autonumericskus>
+                        <class>spranks_autonumericskus/observer</class>
+                        <method>coreBlockAbstractToHtmlAfter</method>
+                    </spranks_autonumericskus>
+                </observers>
+            </core_block_abstract_to_html_after>
+        </events>
+    </adminhtml>
+</config>
