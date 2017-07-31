@@ -30,9 +30,9 @@ class Spranks_AutoNumericSkus_Model_Observer
         $collection = Mage::getResourceModel('catalog/product_collection')
             ->addAttributeToSelect('sku')
             ->addFieldToFilter('sku', array('regexp' => '^[0-9]+$'))
-            ->addOrder('sku')
             ->setPageSize(1)
             ->setCurPage(1);
+        $collection->getSelect()->order('LENGTH(sku) DESC, sku DESC');
         $lastProduct = $collection->getFirstItem();
         if ( ! $lastProduct->getId()) {
             return 1;
